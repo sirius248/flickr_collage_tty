@@ -4,13 +4,13 @@ require 'flickr_collage_tty/flickr'
 require 'flickr_collage_tty/assembler'
 
 class FlickrCollageTty::Generator
-  def self.call(keywords)
+  def self.call(keywords, output)
     image_urls = FlickrCollageTty::ImagesAggregator.call(
       keywords,
       FlickrCollageTty::Flickr.instance,
       FlickrCollageTty::Dictionary.instance
     )
     FlickrCollageTty::Downloader.call(image_urls)
-    FlickrCollageTty::Assembler.call
+    FlickrCollageTty::Assembler.call(output)
   end
 end

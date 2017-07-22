@@ -21,4 +21,6 @@ keywords = prompt.ask("Enter a list of keywords (keywords separated by a comma)"
   q.convert -> (input) { input.split(/,\s*/).uniq.take(10) }
 end
 
-FlickrCollageTty.generate_collage(keywords)
+output = prompt.ask("Enter output filename: ", required: true)
+
+FlickrCollageTty.generate_collage(keywords, output)

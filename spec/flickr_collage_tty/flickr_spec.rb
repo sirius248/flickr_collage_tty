@@ -39,7 +39,7 @@ RSpec.describe FlickrCollageTty::Flickr do
 
       result = flickr_instance.search(text: keyword)
 
-      # expect(result).to include("http")
+      expect(result).to include("http")
       expect(result).to include("jpg")
     end
   end
