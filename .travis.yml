@@ -3,3 +3,6 @@ language: ruby
 rvm:
   - 2.3.0
 before_install: gem install bundler -v 1.14.6
+env:
+  - flickr_api_key=97843ab2c5f1b0c8dac5626f5ce9e427
+  - flickr_api_secret=518c750a1962d14a

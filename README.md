@@ -1,8 +1,5 @@
 # FlickrCollageTty
 
-key: 97843ab2c5f1b0c8dac5626f5ce9e427
-Secret: 518c750a1962d14a
-
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/flickr_collage_tty`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem

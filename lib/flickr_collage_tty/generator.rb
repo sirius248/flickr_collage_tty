@@ -5,16 +5,6 @@ require 'flickr_collage_tty/assembler'
 
 class FlickrCollageTty::Generator
   def self.call(keywords)
-    new(keywords).call
-  end
-
-  attr_reader :keywords
-
-  def initialize(keywords)
-    @keywords = keywords
-  end
-
-  def call
     image_urls = FlickrCollageTty::ImagesAggregator.call(
       keywords,
       FlickrCollageTty::Flickr.instance,

@@ -7,6 +7,11 @@ class FlickrCollageTty::Flickr
     def create
       self.instance = new
     end
+
+    def set_credentials
+      FlickRaw.api_key = FlickrCollageTty.configuration.api_key
+      FlickRaw.shared_secret = FlickrCollageTty.configuration.api_secret
+    end
   end
 
   def search(text:)
@@ -25,7 +30,6 @@ class FlickrCollageTty::Flickr
 
     def initialize
       @flickr = FlickRaw::Flickr.new
-      self
     end
 
     def get_photo_url_from(flick_raw_response:)

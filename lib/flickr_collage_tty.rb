@@ -5,14 +5,9 @@ require 'flickr_collage_tty/dictionary'
 
 module FlickrCollageTty
   def self.generate_collage(keywords)
-    FlickrCollageTty.set_flickr_api_credentials
-    FlickrCollageTty::Dictionary.load
+    FlickrCollageTty::Flickr.set_credentials
     FlickrCollageTty::Flickr.create
+    FlickrCollageTty::Dictionary.load
     FlickrCollageTty::Generator.call(keywords)
-  end
-
-  def self.set_flickr_api_credentials
-    FlickRaw.api_key = FlickrCollageTty.configuration.api_key
-    FlickRaw.shared_secret = FlickrCollageTty.configuration.api_secret
   end
 end
