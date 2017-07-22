@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'tty'
+require 'flickr_collage_tty'
+require 'flickr_collage_tty/configuration'
+
+prompt = TTY::Prompt.new
+
+while !FlickrCollageTty.api_key_given?
+  api_key = prompt.ask("Enter Flickr api key: ", required: true)
+  api_secret = prompt.ask("Enter Flickr api secret: ", required: true)
+
+  FlickrCollageTty.configure do |config|
+    config.api_key = api_key
+    config.api_secret = api_secret
+  end
+end
+
+keywords = prompt.ask("Enter a list of keywords (keywords separated by a comma)") do |q|
+  q.required true
+  q.convert -> (input) { input.split(/,\s*/).uniq.take(10) }
+end
+
+FlickrCollageTty.generate_collage(keywords)
