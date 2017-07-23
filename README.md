@@ -20,6 +20,10 @@ In order to this gem to work the following things are required:
 * ImageMagick
 * Flickr API key
 
+## Program design
+
+![design](https://user-images.githubusercontent.com/2282642/28501264-815d205a-7002-11e7-9995-9e3095eb100f.png)
+
 ## Usage
 
 ```ruby

@@ -24,7 +24,7 @@ end
 
 output =
   prompt.ask(
-    "Enter output filename (should include absolute or relative path to the file) : ",
+    "Enter output filename (should enter absolute path to the file, ex: ./test.jpg) : ",
     required: true
   )
 
