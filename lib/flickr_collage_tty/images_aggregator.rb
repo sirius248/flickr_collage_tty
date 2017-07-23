@@ -28,15 +28,15 @@ module FlickrCollageTty
       end
 
       FlickrCollageTty::Utils::Spinner.stop(message: "Finish aggregate image urls!")
-      
+
       image_urls
     end
 
     private
 
-      def get_new_image_url(keyword)
-        url = flickr.search(text: keyword)
-        image_urls << url if url
-      end
+    def get_new_image_url(keyword)
+      url = flickr.search(text: keyword)
+      image_urls << url if url
+    end
   end
 end

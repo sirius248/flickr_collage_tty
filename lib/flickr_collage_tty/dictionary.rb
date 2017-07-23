@@ -15,13 +15,14 @@ class FlickrCollageTty::Dictionary
   end
 
   private
-    def initialize(path)
-      @path = path
-      @data = load
-    end
 
-    def load
-      return [] unless File.exist?(@path)
-      File.readlines(@path).map(&:strip)
-    end
+  def initialize(path)
+    @path = path
+    @data = load
+  end
+
+  def load
+    return [] unless File.exist?(@path)
+    File.readlines(@path).map(&:strip)
+  end
 end

@@ -3,7 +3,7 @@ class FlickrCollageTty::Downloader
     FlickrCollageTty::Utils::Spinner.start(message: "Downloading image urls ...")
 
     image_urls.each_with_index do |url, index|
-      puts "Downloading image from: #{url}"
+      TTY::Prompt.new.say("Downloading image from: #{url}")
       TTY::File.download_file(url, "/tmp/flickr_collages/collage_#{index}.jpg")
     end
 

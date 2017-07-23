@@ -1,0 +1,13 @@
+dog
+cat
+book
+lamb
+picture
+television
+phone
+laptop
+wallet
+key
+magazine
+paper
+table

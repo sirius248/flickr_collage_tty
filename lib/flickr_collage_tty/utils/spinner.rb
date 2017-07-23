@@ -7,7 +7,7 @@ module FlickrCollageTty
 
       def self.start(message:)
         self.instance ||= TTY::Spinner.new
-        puts message
+        TTY::Prompt.new.say(message)
         self.instance.auto_spin
       end
 

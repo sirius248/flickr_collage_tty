@@ -28,13 +28,13 @@ class FlickrCollageTty::Flickr
 
   private
 
-    def initialize
-      @flickr = FlickRaw::Flickr.new
-    end
+  def initialize
+    @flickr = FlickRaw::Flickr.new
+  end
 
-    def get_photo_url_from(flick_raw_response:)
-      @flickr.photos.getSizes(photo_id: flick_raw_response.id)[-1].source
-    rescue
-      nil
-    end
+  def get_photo_url_from(flick_raw_response:)
+    @flickr.photos.getSizes(photo_id: flick_raw_response.id)[-1].source
+  rescue
+    nil
+  end
 end
