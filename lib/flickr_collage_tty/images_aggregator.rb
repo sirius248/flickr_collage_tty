@@ -2,6 +2,8 @@ require 'flickr_collage_tty/utils/spinner'
 
 module FlickrCollageTty
   class ImagesAggregator
+    MAX_IMAGE_URLS = 10
+
     def self.call(keywords, flickr, dictionary)
       new(keywords, flickr, dictionary).call
     end
@@ -22,7 +24,7 @@ module FlickrCollageTty
         get_new_image_url(keyword)
       end
 
-      while image_urls.size < 10
+      while image_urls.size < MAX_IMAGE_URLS
         keyword = dictionary.sample
         get_new_image_url(keyword)
       end

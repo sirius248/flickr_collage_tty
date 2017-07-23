@@ -1,8 +1,14 @@
 # FlickrCollageTty
 
+[![Code Climate](https://codeclimate.com/github/kimquy/flickr_collage_tty/badges/gpa.svg)](https://codeclimate.com/github/kimquy/flickr_collage_tty)
+
+[![Build Status](https://travis-ci.org/kimquy/flickr_collage_tty.svg?branch=master)](https://travis-ci.org/kimquy/flickr_collage_tty)
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/flickr_collage_tty`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
+
+![screenshot](https://user-images.githubusercontent.com/2282642/28498501-2c64cce4-6fc9-11e7-889a-1d4dbe1069f3.jpg)
 
 ## Installation
 
@@ -32,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/flickr_collage_tty. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kimquy/flickr_collage_tty. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
