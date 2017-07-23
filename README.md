@@ -4,31 +4,30 @@
 
 [![Build Status](https://travis-ci.org/kimquy/flickr_collage_tty.svg?branch=master)](https://travis-ci.org/kimquy/flickr_collage_tty)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/flickr_collage_tty`. To experiment with that code, run `bin/console` for an interactive prompt.
+FlickrCollageTty allow you to create a collage from keywords you enter into the terminal. Then it will fetch the most suitable image from Flickr correspond to each keyword.
 
-TODO: Delete this and the text above, and describe your gem
 
 ![screenshot](https://user-images.githubusercontent.com/2282642/28498501-2c64cce4-6fc9-11e7-889a-1d4dbe1069f3.jpg)
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'flickr_collage_tty'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install flickr_collage_tty
+
+## Requirements
+
+In order to this gem to work the following things are required:
+
+* ImageMagick
+* Flickr API key
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# Simply run the following command into the terminal
+# Then follow the instruction of the programm
+
+fc_tty
+```
 
 ## Development
 
