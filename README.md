@@ -37,6 +37,12 @@ In order to this gem to work the following things are required:
 fc_tty
 ```
 
+## Improvements
+
+* Improve test coverages, more meaningful test cases.
+* Improve test speed (VCR, or can do simple stub/mock)
+* Improve the download images speed. May allow to download multiple images concurrently.
+
 
 ## Contributing
 
