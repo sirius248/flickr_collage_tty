@@ -3,12 +3,13 @@ require 'rmagick/screwdrivers'
 class FlickrCollageTty::Assembler
   COLLAGE_DIR = "/tmp/flickr_collages"
 
-  def self.call(output)
-    new(output).call
+  def self.call(output, tmp_folder = COLLAGE_DIR)
+    new(output, tmp_folder).call
   end
 
-  def initialize(output)
+  def initialize(output, tmp_folder)
     @output = output
+    @tmp_folder = tmp_folder
   end
 
   def call
@@ -31,12 +32,12 @@ class FlickrCollageTty::Assembler
 
   def clean_up
     0.upto(9).each do |i|
-      TTY::File.remove_file("#{COLLAGE_DIR}/collage_#{i}.jpg")
+      TTY::File.remove_file("#{@tmp_folder}/collage_#{i}.jpg")
     end
   end
 
   def create_collage
-    Magick::Screwdrivers.collage(COLLAGE_DIR, options).write(options[:output])
+    Magick::Screwdrivers.collage(@tmp_folder, options).write(options[:output])
   end
 
   def success_message

@@ -5,59 +5,17 @@ AllCops:
     - flickr_collage_tty.gemspec
     - Rakefile
 
-Rails:
-  Enabled: true
-
-Style/Alias:
-  Enabled: false
-
-Style/HashSyntax:
-  EnforcedStyle: ruby19
-
 Style/Documentation:
-  Enabled: false
-
-Style/AlignParameters:
-  Enabled: false
-
-Style/BlockEndNewline:
   Enabled: false
 
 Metrics/BlockLength:
   Max: 40
 
-Rails/Delegate:
-  Enabled: false
-
 Style/GuardClause:
-  Enabled: false
-
-Style/IndentHash:
-  Enabled: false
-
-Style/SpaceBeforeFirstArg:
-  Enabled: false
-
-Style/PredicateName:
-  Enabled: false
-
-Style/Next:
-  Enabled: false
-
-Style/CaseIndentation:
-  Enabled: false
-
-Style/ParallelAssignment:
   Enabled: false
 
 Metrics/LineLength:
   Max: 100
-
-Metrics/ClassLength:
-  Enabled: false
-
-Metrics/ClassLength:
-  Enabled: false
 
 Style/StringLiterals:
   Enabled: false
@@ -66,28 +24,7 @@ Style/StringLiterals:
     - double_quotes
   ConsistentQuotesInMultiline: false
 
-Metrics/ParameterLists:
-  Max: 6
-
-Style/DotPosition:
-  Enabled: false
-
-Metrics/AbcSize:
-  Enabled: false
-
 Metrics/MethodLength:
-  Enabled: false
-
-Style/AccessorMethodName:
-  Enabled: false
-
-Style/AlignArray:
-  Enabled: false
-
-Style/IndentArray:
-  Enabled: false
-
-Style/AndOr:
   Enabled: false
 
 Style/BlockDelimiters:
@@ -96,32 +33,14 @@ Style/BlockDelimiters:
 Style/ClassAndModuleChildren:
   Enabled: false
 
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   Enabled: false
 
-Style/MultilineMethodCallIndentation:
-  Enabled: false
-
-Style/RegexpLiteral:
-  Enabled: false
-
-Rails/HasAndBelongsToMany:
+Layout/MultilineMethodCallIndentation:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/SignalException:
-  Enabled: false
-
 Style/MutableConstant:
-  Enabled: false
-
-Style/ConditionalAssignment:
-  Enabled: false
-
-Lint/AmbiguousRegexpLiteral:
-  Description: >-
-                 Checks for ambiguous regexp literals in the first argument of
-                 a method invocation without parenthesis.
   Enabled: false

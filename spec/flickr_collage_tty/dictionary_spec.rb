@@ -6,8 +6,10 @@ RSpec.describe FlickrCollageTty::Dictionary do
   }
 
   let(:data) {
-    %w[dog cat book lamb picture television phone laptop
-    wallet key magazine paper table].sort
+    %w[
+      dog cat book lamb picture television phone laptop
+      wallet key magazine paper table
+    ].sort
   }
 
   describe ".load" do

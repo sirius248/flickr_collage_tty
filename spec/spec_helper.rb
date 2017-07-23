@@ -6,6 +6,9 @@ require 'flickr_collage_tty/configuration'
 require 'flickr_collage_tty/dictionary'
 require 'flickr_collage_tty/images_aggregator'
 require 'flickr_collage_tty/utils/spinner'
+require 'flickr_collage_tty/utils/credential_storage'
+
+ENV["environment"] = "test"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
